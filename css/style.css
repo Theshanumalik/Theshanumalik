@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Baloo Bhai 2", cursive;
+}
+body {
+  background: rgb(51, 51, 51, 0.6);
+}
+main {
+  width: 70%;
+  height: 75vh;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 50px solid lightgray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  border-radius: 10px;
+}
+.banner_side {
+  flex: 1.5;
+  position: relative;
+}
+.banner_side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.banner_side .greetings {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.auth_side {
+  flex: 2;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.auth_side .form_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+.auth_side .form_container .login_form,
+.auth_side .form_container .sign_up_form {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.auth_side .form_container .sign_up_form {
+  left: 100%;
+}
+.form_container h1 {
+  margin: 20px 0;
+}
+.form_control {
+  margin: 10px 0;
+}
+.field {
+  border: 2px solid lightgray;
+  width: 300px;
+  padding: 8px 12px;
+  position: relative;
+  border-radius: 5px;
+  height: 50px;
+}
+.field input {
+  border: 0;
+  background: 0;
+  outline: none;
+  font-size: 16px;
+  padding: 2px 3px;
+}
+.field i {
+  padding: 2px 3px;
+}
+.fixed_right {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.btn {
+  background: #333;
+  border: 0;
+  color: white;
+  font-size: 18px;
+  padding: 8px 12px;
+  width: 300px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login_form,
+.sign_up_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show {
+  transform: translateX(-100%);
+}
